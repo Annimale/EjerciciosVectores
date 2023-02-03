@@ -18,15 +18,15 @@ public class Ejercicio2 {
        
         
         System.out.println("Imprimimos los alfanumericos que ocupan una posicion par en el vector");
-        for (int i = 0; i < alfanum.length; i+=2) {
-            System.out.println(alfanum[i]);
+        for (int i = 0; i < alfanum.length; i++) {//Tambien se puede hacer con una condición de la posición
+            if (i%2==0) {
+                System.out.println("Posicion PAR del array es: "+i+ " y su contenido es:  "+alfanum[i]);
+            }else{
+                System.out.println("Posicion IMPAR del array es: "+i+ " y su contenido es:  "+alfanum[i]);
+            }
             
         }
-        System.out.println("Imprimimos los alfanumericos que ocupan una posicion impar en el vector");
-        for (int i = 1; i < alfanum.length; i+=2) {
-            System.out.println(alfanum[i]);
-           
-        }
+       
     }
     
 }
